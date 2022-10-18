@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00C9A7;
+    font-family: 'Open Sans';
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 25px 0;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.encabezado-img {
+    background: url("mascotas.header.jpg");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00C9A7;
+}
+
+.encabezado-img p {
+    font-size: 20px;
+}
+
+.encabezado-img h1 {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.topbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4D8076;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.buscar {
+    position: relative;
+    padding: 5px;
+}
+
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0 15px 45px rgba(0, 0, 0.25);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover {
+width: 600px;
+}
+
+.card .imgBox {
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover .imgBox {
+    transform: rotate(-35deg);
+}
+
+.card .imgBox img {
+    width: 85%;
+}
+
+.card .details {
+    position: relative;
+    min-width: 300px;
+    background: #C4FCEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #4D8076;
+}
+
+.card .details::before {
+content: "";
+position: absolute;
+left: 0;
+width: 0;
+height: 0;
+border-bottom: 10px solid transparent;
+border-top: 10px solid transparent;
+border-left: 10px solid #fff;
+}
+
+.card .details .title small {
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.card .details h4 {
+    font-size: 0.9em;
+}
+
+.card .details .description p {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.card .details .buy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .details .buy .price {
+    font-size: 1.6em;
+}
+
+.card .details .buy .price {
+    font-size: 1.6em;
+}
+
+.card .details .buy .btn {
+    background: #fff;
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+
+}
+
+.card .details .buy .btn a {
+    text-decoration: none;
+    color: #4D8076;
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #00C9A7;
+    ;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
